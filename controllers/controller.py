@@ -1,6 +1,7 @@
 from flask import redirect, render_template, request
 from app import app
 from models.game import Game
+from models.machine import Machine
 from models.player import Player
 
 @app.route('/')
@@ -22,3 +23,16 @@ def game_result(player_one_choice, player_two_choice):
     
     return render_template("result.html", title="result", result=game_result)
     
+@app.route('/play', methods=['GET', 'POST'])
+def play_against_the_machine():
+    player_name = request.form.get("user_name", False)
+    player_choice = request.form.get("choice", False)
+    player_one = Player(player_name, player_choice)
+
+    the_machine = Machine("The Machine")
+    machine_choice = the_machine.get_choice()
+
+    game = Game(player_choice, machine_choice)
+    game_result = game.play_game(player_one, the_machine)
+    
+    return render_template("play.html", title="Play", result=game_result)

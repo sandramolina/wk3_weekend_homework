@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div id="form-container">
+    <h3>Please input your name and choice, then click on play button:</h3>   
+    <form class="input-group mb-3" id="game-setup" action="/play" method="post">
+        <span class="input-group-text">Your Name</span>
+        <input type="text" aria-label="Player One Name" class="form-control" name="user_name" id="user_name" required>
+        <select class="form-select" aria-label="Select your choice for the game" name="choice" required>
+            <option selected>Select your choice for the game</option>
+            <option value="rock">Rock</option>
+            <option value="scissors">Scissors</option>
+            <option value="paper">Paper</option>
+        </select>
+        <button type="submit" class="btn btn-btn btn-success">Play</button>
+    </form>
+</div>
+<h1 id="result-text">{{result}}</h1>
+
+{% endblock %}
