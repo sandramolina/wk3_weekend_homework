@@ -3,9 +3,9 @@
     <h1>Welcome to Rock, Paper, Scissors game</h1>
 </header>
 <main>
-    <div id="explanation">
+    <div id="explanation" class="card">
     <!-- <img src="../img/rock-paper-scissors.png" /> -->
-    <p>
+    <p class="card-body">
         Rock, Paper, Scissors (aka "Ro-Sham-Bo"; janken; "Bato, Bato, Pick"; and
         "Scissors, Paper, Stone") is a simple game: It is played around the world
         and is commonly used as a way of coming to decisions. The rules require
@@ -17,7 +17,7 @@
     </p>
     </div>
     <form class="input-group mb-3" id="game-setup" action="/<player_one_choice>/<player_two_choice>" method="post">
-        <span class="input-group-text">Player One Name</span>
+        <span class="input-group-text">Player One</span>
         <input type="text" aria-label="Player One Name" class="form-control" name="name1" id="name1">
         <select class="form-select" aria-label="Select your choice for the game" name="choice1">
             <option selected>Select your choice for the game</option>
@@ -26,7 +26,7 @@
             <option value="paper">Paper</option>
         </select>
     
-        <span class="input-group-text">Player Two Name</span>
+        <span class="input-group-text">Player Two</span>
         <input type="text" aria-label="Player Two Name" class="form-control" name="name2" id="name2">
         <select class="form-select" aria-label="Select your choice for the game" name="choice2">
             <option selected>Select your choice for the game</option>
