@@ -1,4 +1,4 @@
-from flask import redirect, render_template, request
+from flask import render_template, request
 from app import app
 from models.game import Game
 from models.machine import Machine
