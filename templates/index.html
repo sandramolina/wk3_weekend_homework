@@ -3,8 +3,8 @@
   <h1>Welcome to Rock, Paper, Scissors game</h1>
 </header>
 <main>
-  <div>
-    <img src="../img/rock-paper-scissors.png" />
+  <div id="explanation">
+    <!-- <img src="../img/rock-paper-scissors.png" /> -->
     <p>
       Rock, Paper, Scissors (aka "Ro-Sham-Bo"; janken; "Bato, Bato, Pick"; and
       "Scissors, Paper, Stone") is a simple game: It is played around the world
@@ -15,6 +15,16 @@
       that anybody can play and win. There is no intrinsic advantage to the
       stronger, older, or more experienced opponent.
     </p>
+  </div>
+  <div class="input-group mb-3" id="game-setup">
+    <span class="input-group-text">Your Name</span>
+    <input type="text" aria-label="Player One Name" class="form-control">
+    <select class="form-select" aria-label="Select your choice for the game">
+        <option selected>Select your choice for the game</option>
+        <option value="rock">Rock</option>
+        <option value="scissors">Scissors</option>
+        <option value="paper">Paper</option>
+      </select>
   </div>
 </main>
 {% endblock %}
