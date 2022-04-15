@@ -7,3 +7,4 @@ class Machine:
     
     def get_choice(self):
         self.choice = choice(['rock', 'scissors', 'paper'])
+        return self.choice
