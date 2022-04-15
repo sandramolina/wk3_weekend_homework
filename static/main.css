@@ -7,10 +7,35 @@
 }
 
 #explanation{
-    display: flex;
+    max-width: 683px;
+    margin-left: 3vw;
+    margin-top: 3vw;
 }
 
 #form-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 53%;
+}
+
+body {
+    background-color: #F1F7ED;
+}
+main {
     display: flex;
-    justify-content: center;
+    align-items: center
+}
+
+header {
+    background-color: #243E36;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw;
+}
+
+#nav-list {
+    list-style: none;
+    color: white;
 }
