@@ -30,9 +30,8 @@ def play_against_the_machine():
     player_one = Player(player_name, player_choice)
 
     the_machine = Machine("The Machine")
-    machine_choice = the_machine.get_choice()
-
-    game = Game(player_choice, machine_choice)
+    
+    game = Game(player_choice, the_machine.get_choice())
     game_result = game.play_game(player_one, the_machine)
     
     return render_template("play.html", title="Play", result=game_result)

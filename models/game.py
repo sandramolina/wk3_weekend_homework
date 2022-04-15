@@ -33,5 +33,5 @@ class Game:
             else:
                 self._winner = player_two.name
                 self._winner_choice = player_two.choice
-
+        
         return f'{self._winner} wins by playing {self._winner_choice}' 
