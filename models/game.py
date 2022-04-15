@@ -7,7 +7,8 @@ class Game:
 
     def play_game(self, player_one, player_two):
         if player_one.choice == player_two.choice:
-            return f'Even since both players choose {player_one.choice}'
+            self._winner = None
+            return f'It is a draw since both players choose {player_one.choice}'
 
         if player_one.choice == "Rock":
             if player_two.choice == "Scissors":
