@@ -5,7 +5,7 @@
 <main>
     <div id="explanation">
     <img id="image" src="../static/rock-paper-scissors.png" />
-    <p class="card-body">
+    <p>
         Rock, Paper, Scissors (aka "Ro-Sham-Bo"; janken; "Bato, Bato, Pick"; and
         "Scissors, Paper, Stone") is a simple game: It is played around the world
         and is commonly used as a way of coming to decisions. The rules require
@@ -16,27 +16,27 @@
         stronger, older, or more experienced opponent.
     </p>
     </div>
-    <form class="input-group mb-3" id="game-setup" action="/<player_one_choice>/<player_two_choice>" method="post">
-        <span class="input-group-text">Player One</span>
-        <input type="text" aria-label="Player One Name" class="form-control" name="name1" id="name1">
-        <select class="form-select" aria-label="Select your choice for the game" name="choice1">
-            <option selected>Select your choice for the game</option>
-            <option value="rock">Rock</option>
-            <option value="scissors">Scissors</option>
-            <option value="paper">Paper</option>
-        </select>
-    
-        <span class="input-group-text">Player Two</span>
-        <input type="text" aria-label="Player Two Name" class="form-control" name="name2" id="name2">
-        <select class="form-select" aria-label="Select your choice for the game" name="choice2">
-            <option selected>Select your choice for the game</option>
-            <option value="rock">Rock</option>
-            <option value="scissors">Scissors</option>
-            <option value="paper">Paper</option>
-        </select>
-        <button type="submit" class="btn btn-primary">Play</button>
-    </form>
-    
-    <!-- <button name="play" type="button" class="btn btn-primary">Play</button> -->
+    <div id="form-container">   
+        <form class="input-group mb-3" id="game-setup" action="/<player_one_choice>/<player_two_choice>" method="post">
+            <span class="input-group-text">Player One</span>
+            <input type="text" aria-label="Player One Name" class="form-control" name="name1" id="name1">
+            <select class="form-select" aria-label="Select your choice for the game" name="choice1">
+                <option selected>Select your choice for the game</option>
+                <option value="rock">Rock</option>
+                <option value="scissors">Scissors</option>
+                <option value="paper">Paper</option>
+            </select>
+        
+            <span class="input-group-text">Player Two</span>
+            <input type="text" aria-label="Player Two Name" class="form-control" name="name2" id="name2">
+            <select class="form-select" aria-label="Select your choice for the game" name="choice2">
+                <option selected>Select your choice for the game</option>
+                <option value="rock">Rock</option>
+                <option value="scissors">Scissors</option>
+                <option value="paper">Paper</option>
+            </select>
+            <button type="submit" class="btn btn-primary">Play</button>
+        </form>
+    </div>
 </main>
 {% endblock %}
