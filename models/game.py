@@ -10,24 +10,24 @@ class Game:
             self._winner = None
             return f'It is a draw since both players choose {player_one.choice}'
 
-        if player_one.choice == "Rock":
-            if player_two.choice == "Scissors":
+        if player_one.choice == "rock":
+            if player_two.choice == "scissors":
                 self._winner = player_one.name
                 self._winner_choice = player_one.choice
             else:
                 self._winner = player_two.name
                 self._winner_choice = player_two.choice
 
-        if player_one.choice == "Scissors":
-            if player_two.choice == "Paper":
+        if player_one.choice == "scissors":
+            if player_two.choice == "paper":
                 self._winner = player_one.name
                 self._winner_choice = player_one.choice
             else:
                 self._winner = player_two.name
                 self._winner_choice = player_two.choice
 
-        if player_one.choice == "Paper":
-            if player_two.choice == "Rock":
+        if player_one.choice == "paper":
+            if player_two.choice == "rock":
                 self._winner = player_one.name
                 self._winner_choice = player_one.choice
             else:
