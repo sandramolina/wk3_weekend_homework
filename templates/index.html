@@ -1,30 +1,42 @@
 {% extends "base.html" %} {% block content %}
 <header>
-  <h1>Welcome to Rock, Paper, Scissors game</h1>
+    <h1>Welcome to Rock, Paper, Scissors game</h1>
 </header>
 <main>
-  <div id="explanation">
+    <div id="explanation">
     <!-- <img src="../img/rock-paper-scissors.png" /> -->
     <p>
-      Rock, Paper, Scissors (aka "Ro-Sham-Bo"; janken; "Bato, Bato, Pick"; and
-      "Scissors, Paper, Stone") is a simple game: It is played around the world
-      and is commonly used as a way of coming to decisions. The rules require
-      that competing players use one hand to form one of three shapes at an
-      agreed-upon time. The person that plays the strongest “object” is the
-      winner of the game. It's that easy! Rock, Paper, Scissors is a simple game
-      that anybody can play and win. There is no intrinsic advantage to the
-      stronger, older, or more experienced opponent.
+        Rock, Paper, Scissors (aka "Ro-Sham-Bo"; janken; "Bato, Bato, Pick"; and
+        "Scissors, Paper, Stone") is a simple game: It is played around the world
+        and is commonly used as a way of coming to decisions. The rules require
+        that competing players use one hand to form one of three shapes at an
+        agreed-upon time. The person that plays the strongest “object” is the
+        winner of the game. It's that easy! Rock, Paper, Scissors is a simple game
+        that anybody can play and win. There is no intrinsic advantage to the
+        stronger, older, or more experienced opponent.
     </p>
-  </div>
-  <div class="input-group mb-3" id="game-setup">
-    <span class="input-group-text">Your Name</span>
-    <input type="text" aria-label="Player One Name" class="form-control">
-    <select class="form-select" aria-label="Select your choice for the game">
-        <option selected>Select your choice for the game</option>
-        <option value="rock">Rock</option>
-        <option value="scissors">Scissors</option>
-        <option value="paper">Paper</option>
-      </select>
-  </div>
+    </div>
+    <div class="input-group mb-3" id="game-setup">
+        <span class="input-group-text">Player One Name</span>
+        <input type="text" aria-label="Player One Name" class="form-control">
+        <select class="form-select" aria-label="Select your choice for the game">
+            <option selected>Select your choice for the game</option>
+            <option value="rock">Rock</option>
+            <option value="scissors">Scissors</option>
+            <option value="paper">Paper</option>
+        </select>
+    </div>
+    <br>
+    <div class="input-group mb-3" id="game-setup">
+        <span class="input-group-text">Player Two Name</span>
+        <input type="text" aria-label="Player Two Name" class="form-control">
+        <select class="form-select" aria-label="Select your choice for the game">
+            <option selected>Select your choice for the game</option>
+            <option value="rock">Rock</option>
+            <option value="scissors">Scissors</option>
+            <option value="paper">Paper</option>
+        </select>
+    </div>
+    <button name="play" type="button" class="btn btn-primary">Play</button>
 </main>
 {% endblock %}
