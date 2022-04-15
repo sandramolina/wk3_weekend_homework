@@ -4,3 +4,12 @@
 #game-setup {
     width: 60vw;
 }
+#image {
+    width: 14vw;
+    height: auto;
+}
+
+#explanation{
+    display: flex;
+    width: max-content;
+}
