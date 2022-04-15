@@ -29,10 +29,20 @@ main {
 
 header {
     background-color: #243E36;
-    color: white;
+    color: #F1F7ED;
     display: flex;
     justify-content: space-between;
     padding: 1vw;
+}
+
+li {
+    display: inline;
+    padding: 1vw;
+    color: #F1F7ED;
+}
+
+a {
+    color: #F1F7ED;;
 }
 
 #nav-list {
