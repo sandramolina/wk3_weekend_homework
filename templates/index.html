@@ -24,8 +24,8 @@
         <h3>Please input player names, choices and click on play button:</h3>   
         <form class="input-group mb-3" id="game-setup" action="/<player_one_choice>/<player_two_choice>" method="post">
             <span class="input-group-text">Player One</span>
-            <input type="text" aria-label="Player One Name" class="form-control" name="name1" id="name1">
-            <select class="form-select" aria-label="Select your choice for the game" name="choice1">
+            <input type="text" aria-label="Player One Name" class="form-control" name="name1" id="name1" required>
+            <select class="form-select" aria-label="Select your choice for the game" name="choice1" required>
                 <option selected>Select your choice for the game</option>
                 <option value="rock">Rock</option>
                 <option value="scissors">Scissors</option>
@@ -33,8 +33,8 @@
             </select>
         
             <span class="input-group-text">Player Two</span>
-            <input type="text" aria-label="Player Two Name" class="form-control" name="name2" id="name2">
-            <select class="form-select" aria-label="Select your choice for the game" name="choice2">
+            <input type="text" aria-label="Player Two Name" class="form-control" name="name2" id="name2" required>
+            <select class="form-select" aria-label="Select your choice for the game" name="choice2" required>
                 <option selected>Select your choice for the game</option>
                 <option value="rock">Rock</option>
                 <option value="scissors">Scissors</option>

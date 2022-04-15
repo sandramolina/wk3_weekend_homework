@@ -48,9 +48,14 @@ a {
 
 #nav-list {
     list-style: none;
-    color: white;
+    color: #F1F7ED;;
 }
 
 input {
     background-color: #E0EEC6 !important;
+}
+
+#result-text{
+    color: #243E36;
+    padding: 3vw;
 }
