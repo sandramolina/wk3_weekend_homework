@@ -8,6 +8,12 @@ class Game:
         self._winner_choice = ""
 
     def play_game(self):
+        if self.player_one_choice == "Select your choice for the game":
+            return f'{self.player_one_name} should chose a correct option'
+        
+        if self.player_two_choice == "Select your choice for the game":
+            return f'{self.player_two_name} should chose a correct option'
+            
         if self.player_one_choice == self.player_two_choice:
             self._winner = None
             return f'It is a draw since both players choose {self.player_one_choice}'
