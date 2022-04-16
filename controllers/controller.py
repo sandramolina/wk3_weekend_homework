@@ -1,4 +1,3 @@
-from crypt import methods
 from flask import render_template, request
 from app import app
 from models.game import Game
@@ -19,8 +18,9 @@ def game_result(player_one_choice, player_two_choice):
 
     player_one = Player(player_one_name, player_one_choice)
     player_two = Player(player_two_name, player_two_choice)
-    game = Game(player_one_choice, player_two_choice)
-    game_result = game.play_game(player_one, player_two)
+
+    game = Game(player_one, player_two)
+    game_result = game.play_game()
     
     return render_template("result.html", title="result", result=game_result)
     
@@ -32,10 +32,9 @@ def play_against_the_machine():
         player_one = Player(player_name, player_choice)
 
         the_machine = Machine("The Machine")
-        machine_choice = the_machine.get_choice()
         
-        game = Game(player_choice, machine_choice)
-        game_result = game.play_game(player_one, the_machine)
+        game = Game(player_one, the_machine)
+        game_result = game.play_game()
 
         return render_template("play.html", title="Play", result=game_result)
     
