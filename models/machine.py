@@ -5,6 +5,9 @@ class Machine:
         self.name = machine_name
         self.choice = ""
     
+    def get_name(self):
+        return self.name
+
     def get_choice(self):
         self.choice = choice(['rock', 'scissors', 'paper'])
         return self.choice
